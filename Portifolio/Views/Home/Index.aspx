@@ -24,35 +24,36 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+    <%: Styles.Render("~/bundles/css")%>
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="../../Content/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="../../Content/css/bootstrap.min.css">-->
     <!-- Fonts from Font Awsome -->
-    <link rel="stylesheet" href="../../Content/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="../../Content/css/font-awesome.min.css">-->
     <!-- Magnific popup -->
-    <link rel="stylesheet" href="../../Content/css/magnific-popup.css">
+    <!--<link rel="stylesheet" href="../../Content/css/magnific-popup.css">-->
 	<!-- Vegas slider -->
-    <link rel="stylesheet" href="../../Content/css/vegas.min.css">
+    <!--<link rel="stylesheet" href="../../Content/css/vegas.min.css">-->
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="../../Content/css/main.css">
+    <!--<link rel="stylesheet" href="../../Content/css/main.css">-->
 
     <!-- Color styles -->
     <!--<link rel="stylesheet" href="../../Content/css/colors/blue.css">-->
     <!-- <link rel="stylesheet" href="../../Content/css/colors/yellow.css">-->
     <!-- <link rel="stylesheet" href="../../Content/css/colors/red.css">-->
     <!--  <link rel="stylesheet" href="../../Content/css/colors/purple.css">-->
-    <link rel="stylesheet" href="../../Content/css/colors/orange.css">
+    <!--  <link rel="stylesheet" href="../../Content/css/colors/orange.css">-->
     <!--  <link rel="stylesheet" href="../../Content/css/colors/green.css">-->
 
     <!-- Feature detection -->
-    <script src="../../Scripts/modernizr-2.6.2.min.js"></script>
+    <!--<script src="../../Scripts/modernizr-2.6.2.min.js"></script>-->
+    <%: Scripts.Render("~/bundles/js/modernizr")%>
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-        <script src="../../Scripts/html5shiv.js"></script>
-        <script src="../../Scripts/respond.min.js"></script>
+        <%: Scripts.Render("~/bundles/js/ie8Support")%>
     <![endif]-->
 
 </head>
@@ -323,7 +324,7 @@
     <!-- contact ends -->
 
 
-    <script src="../../Scripts/jquery-2.1.3.min.js"></script>
+    <!--<script src="../../Scripts/jquery-2.1.3.min.js"></script>
     <script src="../../Scripts/bootstrap.min.js"></script>
     <script src="../../Scripts/jquery.scrollTo.js"></script>
     <script src="../../Scripts/jquery.nav.js"></script>
@@ -335,12 +336,16 @@
     <script src="../../Scripts/waypoints.min.js"></script>
     <script src="../../Scripts/jqBootstrapValidation.js"></script>
     <script src="../../Scripts/contact_me.js"></script>
-    <script src="../../Scripts/main.js"></script>
+    <script src="../../Scripts/main.js"></script> -->
+    <%: Scripts.Render("~/bundles/js/general")%>
+    <%: Scripts.Render("~/bundles/js/vegas")%>
+
     <script src="../../Scripts/angular/angular.min.js"></script>
     <script src="../../Scripts/angular/angular-sanitize.min.js"></script>
     <script src="../../Scripts/angular/angular-translate.min.js"></script>
     <script src="../../Scripts/angular/app.js"></script>
     <script src="../../Scripts/angular/indexCtrl.js"></script>
+
 </body>
 
 </html>

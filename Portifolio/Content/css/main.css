@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
     background: #000;
     background: rgba(0, 0, 0, 0.7);
-    background: url(../img/loading.gif) no-repeat center center;
+    background: url(../Content/img/loading.gif) no-repeat center center;
     height: 32px;
     left: 20px;
     position: fixed;
@@ -225,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 0;
 }
 .vegas-overlay {
-    background: transparent url(../img/overlays/16.png);
+    background: transparent url(../Content/img/overlays/16.png);
     opacity: 0.5;
     
 }
@@ -272,13 +272,13 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 .next {
-    background: url("../img/next.png");
+    background: url("../Content/img/next.png");
     margin-right: 70px;
     right: 0;
     opacity: 0.3;
 }
 .prev {
-    background: url("../img/prev.png");
+    background: url("../Content/img/prev.png");
     margin-left: 70px;
     left: 0;
     opacity: 0.3;
