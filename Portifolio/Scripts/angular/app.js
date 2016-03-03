@@ -55,7 +55,7 @@ app.config(function ($translateProvider) {
         MESSAGE_LABEL: 'Mensagem',
         SUBIMIT_MESSAGE: 'Enviar Mensagem',
         INPUT_NAME: 'Seu Nome',
-        INPUT_EMAIL: 'Seu Endereço de Email',
+        INPUT_EMAIL: 'Seu Endere&#231;o de Email',
         ST_IT_OCCUPATION: 'Desenvolvedor .NET Sênior (02/2015 - Até o momento)',
         ST_IT_DESCRIPTION: 'Responsável pela manutenção de aplicação SOA (Aplicação orientada a serviço) cujo front-end foi desenvolvido em Silverlight (C#) e o back-end desenvolvido utilizando a tecnologia WCF (C#)',
         DIGISYSTEM_OCCUPATION: 'Desenvolvedor .NET Sênior (10/2010 - 02/2015)',

@@ -23,37 +23,17 @@
     </style>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
 
     <%: Styles.Render("~/bundles/css")%>
-    <!-- Bootstrap core CSS -->
-    <!--<link rel="stylesheet" href="../../Content/css/bootstrap.min.css">-->
-    <!-- Fonts from Font Awsome -->
-    <!--<link rel="stylesheet" href="../../Content/css/font-awesome.min.css">-->
-    <!-- Magnific popup -->
-    <!--<link rel="stylesheet" href="../../Content/css/magnific-popup.css">-->
-	<!-- Vegas slider -->
-    <!--<link rel="stylesheet" href="../../Content/css/vegas.min.css">-->
-    <!-- Custom styles for this template -->
-    <!--<link rel="stylesheet" href="../../Content/css/main.css">-->
-
-    <!-- Color styles -->
-    <!--<link rel="stylesheet" href="../../Content/css/colors/blue.css">-->
-    <!-- <link rel="stylesheet" href="../../Content/css/colors/yellow.css">-->
-    <!-- <link rel="stylesheet" href="../../Content/css/colors/red.css">-->
-    <!--  <link rel="stylesheet" href="../../Content/css/colors/purple.css">-->
-    <!--  <link rel="stylesheet" href="../../Content/css/colors/orange.css">-->
-    <!--  <link rel="stylesheet" href="../../Content/css/colors/green.css">-->
-
-    <!-- Feature detection -->
-    <!--<script src="../../Scripts/modernizr-2.6.2.min.js"></script>-->
     <%: Scripts.Render("~/bundles/js/modernizr")%>
+    
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <%: Scripts.Render("~/bundles/js/ie8Support")%>
+    <!--[if lt IE 9]><%: Scripts.Render("~/bundles/js/ie8Support")%>
     <![endif]-->
 
 </head>
@@ -112,7 +92,7 @@
                     <a href="https://twitter.com/Buriolla" target=_blank class="btn btn-round btn-clear btn-twitter"><i class="fa fa-twitter"></i></a>
                     <a href="https://www.facebook.com/bruno.buriolla" target=_blank class="btn btn-round btn-clear btn-facebook"><i class="fa fa-facebook"></i></a>
                     <a href="https://www.linkedin.com/in/brunoburiolla" target=_blank class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
-
+                    <a href="https://github.com/buriolla" target=_blank class="btn btn-round btn-clear btn-github"><i class="fa fa-github-square"></i></a>
                 </div>
                 <a href="#page-contact" class="btn btn-default hire-me">{{'CONTACT' | translate }}</a>
             </div>

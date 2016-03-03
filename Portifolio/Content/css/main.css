@@ -474,6 +474,9 @@ label.valid {
 .btn-linkedin:hover {
     color: #015786;
 }
+.btn-github:hover {
+    color: #4078c0;
+}
 .btn-pinterest:hover {
     color: #CA2128;
 }
