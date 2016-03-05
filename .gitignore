@@ -18,6 +18,9 @@ $RECYCLE.BIN/
 bin/
 obj/
 
+#Config Files
+*.config
+
 # Windows shortcuts
 *.lnk
 
@@ -50,3 +53,4 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.suo
+*.config

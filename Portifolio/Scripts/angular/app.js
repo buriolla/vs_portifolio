@@ -2,7 +2,7 @@
 var app = angular.module('app', ['ngSanitize', 'pascalprecht.translate']);
 
 app.config(function ($translateProvider) {
-    $translateProvider.translations('en', {
+    $translateProvider.translations('en-US', {
         TITLE: 'Bruno Buriolla | .NET Software Engineer',
         OCCUPATION: '.NET Software Engineer',
         LANG: 'Português',
@@ -34,10 +34,12 @@ app.config(function ($translateProvider) {
         FATEC_COURSE: 'Technologist in Data Processing - <strong>Graduated:</strong> 2008',
         FATEC_DESCRIPTION: 'I always liked technology, since I was a kid, so i decided to graduate myself in data processing on FATEC Taquaritinga mainly because it&rsquo;s a recognized technology college in São Paulo state. Differently from other colleges, the FATEC courses are focused on preparing their students for the market and not for the academic or research carrer. There I figured out how challenging can be the software development and was there that I discovered what I pretend to do till the end of my carrer.',
         UNINOVE_COURSE: 'Information Technology Management - <strong>Graduated:</strong> 2015',
-        UNINOVE_DESCRIPTION: 'After working in software development during some years, I decided to change a little bit the focus of my career and know more about how the IT management works. Then I started one new graduate, the course "Information Technology Management" at Uninove. This decision really changed my understanding of software development process and helped a lot to shape my professional posture since. Now I can have a better understand about some management decisions that I always questioned before the course.'
+        UNINOVE_DESCRIPTION: 'After working in software development during some years, I decided to change a little bit the focus of my career and know more about how the IT management works. Then I started one new graduate, the course "Information Technology Management" at Uninove. This decision really changed my understanding of software development process and helped a lot to shape my professional posture since. Now I can have a better understand about some management decisions that I always questioned before the course.',
+        REQUIRED_FIELD: 'This field is required.',
+        INVALID_EMAIL: 'Please enter a valid e-mail adress.'
         
     });
-    $translateProvider.translations('br', {
+    $translateProvider.translations('pt-BR', {
         TITLE: 'Bruno Buriolla | Desenvolvedor .NET',
         OCCUPATION: 'Desenvolvedor .NET',
         LANG: 'English',
@@ -69,8 +71,10 @@ app.config(function ($translateProvider) {
         FATEC_COURSE: 'Técnologo em Processamento de Dados - <strong>Graduado em:</strong> 2008',
         FATEC_DESCRIPTION: 'Eu sempre gostei de tecnologia, desde que eu era uma criança, então eu decidi me formar em processamento de dados na FATEC Taquaritinga principalmente porque é uma faculdade de tecnologia reconhecida no Estado de São Paulo. Diferentemente de outras faculdades, cursos Fatec estão focados na preparação de seus alunos para o mercado e não para a carreira acadêmica ou de pesquisa. Lá eu descobri como um desafio pode ser o desenvolvimento de software e foi aí que eu descobri o que eu pretendo fazer até o fim da minha carreira.',
         UNINOVE_COURSE: 'Gestão em Tecnologia da Informação - <strong>Graduado em:</strong> 2015',
-        UNINOVE_DESCRIPTION: 'Depois de trabalhar no desenvolvimento de software, durante alguns anos, decidi mudar um pouco o foco da minha carreira e saber mais sobre como funciona o gerenciamento de TI. Então eu comecei uma nova graduação, o curso "Gestão de Tecnologia da Informação" na Uninove. Esta decisão realmente mudou minha compreensão do processo de desenvolvimento de software e ajudou muito a moldar a minha postura profissional desde então. Agora eu posso ter uma melhor compreensão sobre algumas decisões de gestão que eu sempre questionei antes do curso.'
+        UNINOVE_DESCRIPTION: 'Depois de trabalhar no desenvolvimento de software, durante alguns anos, decidi mudar um pouco o foco da minha carreira e saber mais sobre como funciona o gerenciamento de TI. Então eu comecei uma nova graduação, o curso "Gestão de Tecnologia da Informação" na Uninove. Esta decisão realmente mudou minha compreensão do processo de desenvolvimento de software e ajudou muito a moldar a minha postura profissional desde então. Agora eu posso ter uma melhor compreensão sobre algumas decisões de gestão que eu sempre questionei antes do curso.',
+        REQUIRED_FIELD: 'Este campo &#233; obrigat&#243;rio.',
+        INVALID_EMAIL: 'Por favor informe um endere&#231;o de e-mail v&#225;lido'
     });
-    $translateProvider.preferredLanguage('br');
+    $translateProvider.preferredLanguage('pt-BR');
     $translateProvider.useSanitizeValueStrategy('sanitize');
 });
