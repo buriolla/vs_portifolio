@@ -17,5 +17,7 @@ namespace Portifolio.Models
 
         [Required]
         public string contactMessage { get; set; }
+
+        public string lang { get; set; }
     }
 }

@@ -4,6 +4,7 @@ app.factory('mailRequest', function () {
         this.contactName = "";
         this.contactEmailAdress = "";
         this.contactMessage = "";
+        this.lang = "";
     }
 
     return mailRequest;

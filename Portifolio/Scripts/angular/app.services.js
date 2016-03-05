@@ -1,20 +1,13 @@
 ﻿'use strict';
-app.service('mailService', function ($http) {
-    this.sendMail = function (mailData) {
+app.service('mailService', ['$http', function ($http) {
+
+    this.sendMail = function (mailData, successCallback, errorCallback) {
         var req = {
             method: 'POST',
             url: '/api/mail',
             data: mailData
         };
 
-        $http(req).then(this.successCallback, this.errorCallback);
+        $http(req).then(successCallback, errorCallback);
     };
-
-    this.successCallback = function (response) {
-        console.log("Email sent correctly.");
-    };
-
-    this.errorCallback = function (response) {
-        console.log("Failed to send the email.");
-    };
-});
+} ]);

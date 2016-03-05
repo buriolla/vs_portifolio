@@ -271,19 +271,19 @@
                         <div class="control-group">
                             <label class="control-label" for="name" ng-bind-html="'NAME_LABEL' | translate"></label>
                             <div class="controls">
-                                <input type="text" name="name" id="name" ng-model="mailRequestData.contactName" placeholder="{{'INPUT_NAME' | translate}}" class="form-control input-lg"  required>
+                                <input type="text" name="name" id="name" ng-model="mailRequestData.contactName" class="form-control input-lg"  required>
                                   <div ng-show="contactForm.$submitted || contactForm.name.$touched">
-                                    <p class="help-block text-danger" ng-show="contactForm.name.$error.required" ng-bind-html="'REQUIRED_FIELD' | translate"></p>
+                                    <p class="bg-danger" ng-show="contactForm.name.$error.required" ng-bind-html="'REQUIRED_FIELD' | translate"></p>
                                   </div>
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="email" ng-bind-html="'EMAIL_LABEL' | translate"></label>
                             <div class="controls">
-                                <input type="email" name="email" id="email" ng-model="mailRequestData.contactEmailAdress" placeholder="{{'INPUT_EMAIL' | translate}}" class="form-control input-lg"  required>
+                                <input type="email" name="email" id="email" ng-model="mailRequestData.contactEmailAdress" class="form-control input-lg"  required>
                                   <div ng-show="contactForm.$submitted || contactForm.email.$touched">
-                                    <p class="help-block text-danger" ng-show="contactForm.email.$error.required" ng-bind-html="'REQUIRED_FIELD' | translate"></p>
-                                    <p class="help-block text-danger" ng-show="contactForm.email.$error.email" ng-bind-html="'INVALID_EMAIL' | translate"></p>
+                                    <p class="bg-danger" ng-show="contactForm.email.$error.required" ng-bind-html="'REQUIRED_FIELD' | translate"></p>
+                                    <p class="bg-danger" ng-show="contactForm.email.$error.email" ng-bind-html="'INVALID_EMAIL' | translate"></p>
                                   </div>
                             </div>
                         </div>
@@ -292,13 +292,15 @@
                             <div class="controls">
                                 <textarea name="message" id="message" ng-model="mailRequestData.contactMessage" rows="8" class="form-control input-lg" required></textarea>
                                   <div ng-show="contactForm.$submitted || contactForm.message.$touched">
-                                    <p class="help-block text-danger" ng-show="contactForm.message.$error.required" ng-bind-html="'REQUIRED_FIELD' | translate"></p>
+                                    <p class="bg-danger" ng-show="contactForm.message.$error.required" ng-bind-html="'REQUIRED_FIELD' | translate"></p>
                                   </div>
                             </div>
                         </div>
                         <div class="form-actions">
                         <div id="success"></div>
-                            <button type="submit" class="btn btn-default btn-lg btn-block" ng-bind-html="'SUBIMIT_MESSAGE' | translate" ng-disabled="contactForm.$invalid">Submit Message</button>
+                            <button type="submit" class="btn btn-default btn-lg btn-block" ng-bind-html="'SUBIMIT_MESSAGE' | translate" ng-disabled="contactForm.$invalid"></button>
+                            <p class="bg-success" ng-show="emailSuccess" ng-bind-html="'EMAIL_SUCCESS' | translate"></p>
+                            <p class="bg-danger" ng-show="emailError" ng-bind-html="'EMAIL_ERROR' | translate"></p>
                         </div>
                     </form>
                     <!-- End contact-form -->
@@ -309,21 +311,7 @@
         </div>
     </section>
     <!-- contact ends -->
-
-
-    <!--<script src="../../Scripts/jquery-2.1.3.min.js"></script>
-    <script src="../../Scripts/bootstrap.min.js"></script>
-    <script src="../../Scripts/jquery.scrollTo.js"></script>
-    <script src="../../Scripts/jquery.nav.js"></script>
-    <script src="../../Scripts/jquery.sticky.js"></script>
-    <script src="../../Scripts/jquery.easypiechart.min.js"></script>
-    <script src="../../Scripts/vegas.js"></script>
-    <script src="../../Scripts/jquery.isotope.min.js"></script>
-    <script src="../../Scripts/jquery.magnific-popup.min.js"></script>
-    <script src="../../Scripts/waypoints.min.js"></script>
-    <script src="../../Scripts/jqBootstrapValidation.js"></script>
-    <script src="../../Scripts/contact_me.js"></script>
-    <script src="../../Scripts/main.js"></script> -->
+    
     <%: Scripts.Render("~/bundles/js/general")%>
     <%: Scripts.Render("~/bundles/js/vegas")%>
 
@@ -331,8 +319,8 @@
     <script src="../../Scripts/angular/angular-sanitize.min.js"></script>
     <script src="../../Scripts/angular/angular-translate.min.js"></script>
     <script src="../../Scripts/angular/app.js"></script>
-    <script src="../../Scripts/angular/app.services.js"></script>
     <script src="../../Scripts/angular/app.factory.js"></script>
+    <script src="../../Scripts/angular/app.services.js"></script>
     <script src="../../Scripts/angular/indexCtrl.js"></script>
 
 </body>
