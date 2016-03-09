@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
-using Portifolio.Models;
+﻿using System.Web.Http;
 using Portifolio.Filters;
 using Portifolio.Helper;
+using Portifolio.Models;
 
 namespace Portifolio.Controllers
 {
@@ -14,9 +9,10 @@ namespace Portifolio.Controllers
     {
         // POST api/mail
         [ValidateModel]
+        [ValidateSessionToken]
         public void Post(SendMailRequest request)
         {
-            SendEmails(request);
+            //SendEmails(request);
         }
 
         private void SendEmails(SendMailRequest request)

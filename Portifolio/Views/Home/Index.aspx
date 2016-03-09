@@ -5,7 +5,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" ng-app="app">
+<html class="no-js" ng-app="siteApp">
 <!--<![endif]-->
 
 <head>
@@ -29,8 +29,8 @@
     <%: Scripts.Render("~/bundles/js/modernizr")%>
     
     <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link href="../../Content/css/font-source.css" rel='stylesheet' type='text/css'>
+    <link href="../../Content/css/font-oxygen.css" rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]><%: Scripts.Render("~/bundles/js/ie8Support")%>
@@ -311,17 +311,18 @@
         </div>
     </section>
     <!-- contact ends -->
-    
     <%: Scripts.Render("~/bundles/js/general")%>
     <%: Scripts.Render("~/bundles/js/vegas")%>
+    
 
-    <script src="../../Scripts/angular/angular.min.js"></script>
+    <%--<script src="../../Scripts/angular/angular.min.js"></script>
     <script src="../../Scripts/angular/angular-sanitize.min.js"></script>
     <script src="../../Scripts/angular/angular-translate.min.js"></script>
+    <script src="../../Scripts/angular/angular-cookies.min.js"></script>
     <script src="../../Scripts/angular/app.js"></script>
     <script src="../../Scripts/angular/app.factory.js"></script>
     <script src="../../Scripts/angular/app.services.js"></script>
-    <script src="../../Scripts/angular/indexCtrl.js"></script>
+    <script src="../../Scripts/angular/indexCtrl.js"></script>--%>
 
 </body>
 

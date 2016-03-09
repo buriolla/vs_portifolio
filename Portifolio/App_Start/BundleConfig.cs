@@ -1,5 +1,4 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace Portifolio
 {
@@ -22,6 +21,14 @@ namespace Portifolio
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/js/general").Include(
+                    "~/Scripts/angular/angular.js",
+                    "~/Scripts/angular/angular-sanitize.js",
+                    "~/Scripts/angular/angular-translate.js",
+                    "~/Scripts/angular/angular-cookies.js",
+                    "~/Scripts/angular/siteApp.js",
+                    "~/Scripts/angular/siteApp-factory.js",
+                    "~/Scripts/angular/siteApp-services.js",
+                    "~/Scripts/angular/indexCtrl.js",
                     "~/Scripts/jquery-2.1.3.min.js",
                     "~/Scripts/bootstrap.min.js",
                     "~/Scripts/jquery.scrollTo.js",
@@ -32,15 +39,11 @@ namespace Portifolio
                     "~/Scripts/jquery.magnific-popup.min.js",
                     "~/Scripts/waypoints.min.js",
                     "~/Scripts/jqBootstrapValidation.js",
-                    "~/Scripts/Scripts/contact_me.js",
                     "~/Scripts/main.js"
                 ));
 
             
-            bundles.Add(new ScriptBundle("~/bundles/js/angularApp").Include(
-                    "~/Scripts/angular/app.js",
-                    "~/Scripts/angular/indexCtrl.js"
-                ));
+            
 
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                         "~/Content/css/bootstrap.min.css",
@@ -48,7 +51,7 @@ namespace Portifolio
                         "~/Content/css/magnific-popup.css",
                         "~/Content/css/vegas.min.css",
                         "~/Content/css/main.css",
-                        "~/Content/css/colors/orange.css"));
+                        "~/Content/css/colors/blue.css"));
         }
     }
 }

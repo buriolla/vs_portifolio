@@ -1,5 +1,4 @@
-'use strict';
-app.controller('indexCtrl', ['$scope', '$window', '$translate', 'mailService', 'mailRequest', function ($scope, $window, $translate, mailService, mailRequest) {
+siteApp.controller('indexCtrl', ['$scope', '$window', '$translate', 'mailService', 'mailRequest', function ($scope, $window, $translate, mailService, mailRequest) {
 
     $scope.mailRequestData = new mailRequest();
     $scope.lang = $window.navigator.language || $window.navigator.userLanguage;
@@ -43,4 +42,4 @@ app.controller('indexCtrl', ['$scope', '$window', '$translate', 'mailService', '
     }
 
     setLanguage();
-} ]);
+}]);
