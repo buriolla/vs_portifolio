@@ -86,7 +86,7 @@
             <div class="row">
                 <header class="centered">
                     <h1>Bruno Buriolla</h1>
-                    <p>{{'OCCUPATION' | translate }}</p>
+                    <p ng-bind-html="'OCCUPATION' | translate "></p>
                 </header>
                 <div class="social-icons">
                     <a href="https://twitter.com/Buriolla" target=_blank class="btn btn-round btn-clear btn-twitter"><i class="fa fa-twitter"></i></a>
@@ -94,7 +94,7 @@
                     <a href="https://www.linkedin.com/in/brunoburiolla" target=_blank class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
                     <a href="https://github.com/buriolla" target=_blank class="btn btn-round btn-clear btn-github"><i class="fa fa-github-square"></i></a>
                 </div>
-                <a href="#page-contact" class="btn btn-default hire-me">{{'CONTACT' | translate }}</a>
+                <a href="#page-contact" class="btn btn-default hire-me" ng-bind-html="'CONTACT' | translate "></a>
             </div>
         </div>
     </section>
@@ -311,8 +311,11 @@
         </div>
     </section>
     <!-- contact ends -->
+    
     <%: Scripts.Render("~/bundles/js/general")%>
     <%: Scripts.Render("~/bundles/js/vegas")%>
+    <%: Scripts.Render("~/bundles/js/angularJS")%>
+    
     
 
     <%--<script src="../../Scripts/angular/angular.min.js"></script>
