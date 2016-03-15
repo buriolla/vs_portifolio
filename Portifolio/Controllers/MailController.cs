@@ -12,7 +12,7 @@ namespace Portifolio.Controllers
         [ValidateSessionToken]
         public void Post(SendMailRequest request)
         {
-            //SendEmails(request);
+            SendEmails(request);
         }
 
         private void SendEmails(SendMailRequest request)

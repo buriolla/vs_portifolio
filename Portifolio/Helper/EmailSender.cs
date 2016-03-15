@@ -34,7 +34,6 @@ namespace Portifolio.Helper
             client.UseDefaultCredentials = true;
             client.Host = smtpHost;
             client.Port = smtpPort;
-            client.EnableSsl = true;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.Credentials = new NetworkCredential(fromEmailAdress, emailPassword);
             client.Timeout = 20000;
