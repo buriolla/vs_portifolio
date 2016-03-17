@@ -7,7 +7,6 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" ng-app="siteApp">
 <!--<![endif]-->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,54 +14,40 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
-    
     <style>
-        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak
+        {
             display: none !important;
         }
     </style>
-
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
-
     <%: Styles.Render("~/bundles/css")%>
     <%: Scripts.Render("~/bundles/js/modernizr")%>
-    
     <!-- Fonts -->
     <link href="../../Content/css/font-source.css" rel='stylesheet' type='text/css'>
     <link href="../../Content/css/font-oxygen.css" rel='stylesheet' type='text/css'>
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]><%: Scripts.Render("~/bundles/js/ie8Support")%>
     <![endif]-->
-
 </head>
-
 <body ng-controller="indexCtrl" ng-cloak>
     <div class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span>
                 </button>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" id="main-menu">
-                    <li><a href="#page-welcome">Home</a>
-                    </li>
-                    <li><a href="#page-profile" ng-bind-html="'PROFILE' | translate "></a>
-                    </li>
-                    <li><a href="#page-skills" ng-bind-html="'SKILLS' | translate "></a>
-                    </li>
-                    <li><a href="#page-education" ng-bind-html="'EDUCATION' | translate "></a>
-                    </li>
-                    <li><a href="#page-experience" ng-bind-html="'EXPERIENCE' | translate "></a>
-                    </li>
-                    <li><a href="#page-contact" ng-bind-html="'CONTACT' | translate "></a>
-                    </li>
+                    <li><a href="#page-welcome">Home</a> </li>
+                    <li><a href="#page-profile" ng-bind-html="'PROFILE' | translate "></a></li>
+                    <li><a href="#page-skills" ng-bind-html="'SKILLS' | translate " id="pageSkillsLink"></a></li>
+                    <li><a href="#page-education" ng-bind-html="'EDUCATION' | translate "></a></li>
+                    <li><a href="#page-experience" ng-bind-html="'EXPERIENCE' | translate "></a></li>
+                    <li><a href="#page-contact" ng-bind-html="'CONTACT' | translate "></a></li>
                     <li><a href="" ng-click="changeLanguage()" ng-bind-html="'LANG' | translate "></a>
                     </li>
                 </ul>
@@ -89,10 +74,10 @@
                     <p ng-bind-html="'OCCUPATION' | translate "></p>
                 </header>
                 <div class="social-icons">
-                    <a href="https://twitter.com/Buriolla" target=_blank class="btn btn-round btn-clear btn-twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/bruno.buriolla" target=_blank class="btn btn-round btn-clear btn-facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/brunoburiolla" target=_blank class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
-                    <a href="https://github.com/buriolla" target=_blank class="btn btn-round btn-clear btn-github"><i class="fa fa-github-square"></i></a>
+                    <a href="https://twitter.com/Buriolla" target=_blank class="btn btn-round btn-clear btn-twitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/bruno.buriolla" target=_blank class="btn btn-round btn-clear btn-facebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/brunoburiolla" target=_blank class="btn btn-round btn-clear btn-linkedin" title="Linkedin"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://github.com/buriolla" target=_blank class="btn btn-round btn-clear btn-github"><i class="fa fa-github-square" title="Github"></i></a>
                 </div>
                 <a href="#page-contact" class="btn btn-default hire-me" ng-bind-html="'CONTACT' | translate "></a>
             </div>
@@ -129,38 +114,38 @@
             </header>
             <div class="row">
                 <div class="col-md-2">
-                    <span class="chart" data-percent="90">
-                      <span class="percent"></span>
+                    <span class="chart" data-percent="100">
+                      <span class="percent fa fa-check fa-3"></span>
                     <h3>Microsoft .NET</h3>
                     </span>
                 </div>
                 <div class="col-md-2">
-                    <span class="chart" data-percent="85">
-                      <span class="percent"></span>
+                    <span class="chart" data-percent="100">
+                      <span class="percent fa fa-check fa-3"></span>
                     <h3>C#</h3>
                     </span>
                 </div>
                  <div class="col-md-2">
-                    <span class="chart" data-percent="70">
-                      <span class="percent"></span>
+                    <span class="chart" data-percent="100">
+                      <span class="percent fa fa-check fa-3"></span>
                     <h3>AngularJS</h3>
                     </span>
                 </div>
                 <div class="col-md-2 ">
-                    <span class="chart" data-percent="70">
-                      <span class="percent"></span>
+                    <span class="chart" data-percent="100">
+                      <span class="percent fa fa-check fa-3"></span>
                     <h3>SQL</h3>
                     </span>
                 </div>
                 <div class="col-md-2">
-                    <span class="chart" data-percent="65">
-                      <span class="percent"></span>
+                    <span class="chart" data-percent="100">
+                      <span class="percent fa fa-check fa-3"></span>
                     <h3>jQuery</h3>
                     </span>
                 </div>
                 <div class="col-md-2">
-                    <span class="chart" data-percent="65">
-                      <span class="percent"></span>
+                    <span class="chart" data-percent="100">
+                      <span class="percent fa fa-check fa-3"></span>
                     <h3>HTML 5 + CSS</h3>
                     </span>
                 </div>
@@ -311,11 +296,9 @@
         </div>
     </section>
     <!-- contact ends -->
-    
     <%: Scripts.Render("~/bundles/js/general")%>
     <%: Scripts.Render("~/bundles/js/vegas")%>
     <%: Scripts.Render("~/bundles/js/angularJS")%>
-
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -333,5 +316,4 @@
         ga('send', 'pageview');
     </script>
 </body>
-
 </html>

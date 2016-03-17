@@ -397,6 +397,11 @@ label.valid {
     margin-bottom: 50px;
     text-align: center;
 }
+.chart > span 
+{
+    font-size:30px;
+    color: #3498db;
+}
 .chart canvas {
     position: absolute;
     top: 0;
@@ -404,13 +409,12 @@ label.valid {
 }
 .percent {
     display: inline-block;
-    line-height: 150px;
+    line-height: 132px;
     z-index: 2;
 }
 .percent:after {
-    content: '%';
-    margin-left: 0.1em;
-    font-size: .8em;
+    content: '';
+    font-size: 2em;
 }
 /* ==========================================================================
    Social icons
