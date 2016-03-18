@@ -7,18 +7,18 @@ namespace Portifolio
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/js/modernizr").Include(
-                    "~/Scripts/modernizr-2.6.2.min.js"
-                ));
+            //bundles.Add(new ScriptBundle("~/bundles/js/modernizr").Include(
+                    
+            //    ));
 
             bundles.Add(new ScriptBundle("~/bundles/js/ie8Support").Include(
                     "~/Scripts/html5shiv.js",
                     "~/Scripts/respond.min.js"
                 ));
 
-            bundles.Add(new ScriptBundle("~/bundles/js/vegas").Include(
-                    "~/Scripts/vegas.js"
-                ));
+            //bundles.Add(new ScriptBundle("~/bundles/js/vegas").Include(
+            //        "~/Scripts/vegas.js"
+            //    ));
 
             bundles.Add(new ScriptBundle("~/bundles/js/general").Include(
                     "~/Scripts/jquery-2.1.3.min.js",
@@ -31,7 +31,9 @@ namespace Portifolio
                     "~/Scripts/jquery.magnific-popup.min.js",
                     "~/Scripts/waypoints.min.js",
                     "~/Scripts/jqBootstrapValidation.js",
-                    "~/Scripts/main.js"
+                    "~/Scripts/main.js",
+                    "~/Scripts/vegas.js",
+                    "~/Scripts/modernizr-2.6.2.min.js"
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/js/angularJS").Include(
@@ -49,6 +51,8 @@ namespace Portifolio
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                         "~/Content/css/bootstrap.min.css",
                         "~/Content/css/font-awesome.min.css",
+                        "~/Content/css/font-source.css",
+                        "~/Content/css/font-oxygen.css",
                         "~/Content/css/magnific-popup.css",
                         "~/Content/css/vegas.min.css",
                         "~/Content/css/main.css",

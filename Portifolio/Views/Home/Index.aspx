@@ -22,13 +22,10 @@
     </style>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
-    <%: Styles.Render("~/bundles/css")%>
-    <%: Scripts.Render("~/bundles/js/modernizr")%>
-    <!-- Fonts -->
-    <link href="../../Content/css/font-source.css" rel='stylesheet' type='text/css'>
-    <link href="../../Content/css/font-oxygen.css" rel='stylesheet' type='text/css'>
+    <%: Styles.RenderFormat(@"<link rel=""stylesheet"" href=""{0}"">", "~/bundles/css")%>
+    
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]><%: Scripts.Render("~/bundles/js/ie8Support")%>
+    <!--[if lt IE 9]><%: Scripts.RenderFormat(@"<script src=""{0}"" async></script>", "~/bundles/js/ie8Support")%>
     <![endif]-->
 </head>
 <body ng-controller="indexCtrl" ng-cloak>
@@ -296,9 +293,10 @@
         </div>
     </section>
     <!-- contact ends -->
-    <%: Scripts.Render("~/bundles/js/general")%>
-    <%: Scripts.Render("~/bundles/js/vegas")%>
-    <%: Scripts.Render("~/bundles/js/angularJS")%>
+    
+    <%: Scripts.RenderFormat(@"<script src=""{0}"" async></script>", "~/bundles/js/general")%>
+    <%--<%: Scripts.RenderFormat(@"<script src=""{0}"" async></script>", "~/bundles/js/vegas")%>--%>
+    <%: Scripts.RenderFormat(@"<script src=""{0}"" async></script>", "~/bundles/js/angularJS")%>
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
