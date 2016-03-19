@@ -11,9 +11,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title ng-bind-html="'TITLE' | translate "></title>
-    <meta name="description" content="">
+    <meta name="description" content="Visualizar o perfil profissional de Bruno Buriolla em seu site pessoal. Neste site é possível ler o perfil de Bruno Buriolla, descobrir os conhecimentos de Bruno Buriolla, saber sobre a formação de Bruno Buriolla e conhecer a experiência profissional de Bruno Buriolla. Também é possível entrar em contato com Bruno Buriolla através deste site.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
+    <meta name="author" content="Bruno Buriolla">
+    <meta content="Bruno Buriolla | .NET Software Engineer" name="og:title">
+    <meta content="Bruno Buriolla | Desenvolvedor .NET" name="og:title">
     <style>
         [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak
         {
